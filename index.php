@@ -1,7 +1,7 @@
 
 <?php
   include("sidebar.php");
-  include ('dbh.php');
+  //include ('dbh.php');
   $email = $_SESSION['email'];
 
   $checkOTP= $mysqli->query("SELECT * FROM users WHERE email='$email' ");
