@@ -54,7 +54,7 @@ if(isset($_SESSION['email'])){
                   </div>
                   <form class="user" method="post" action="process_login.php">
                     <div class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email">
+                      <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email" required>
                     </div>
                     <div class="form-group" style="display: none;">
                       <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">

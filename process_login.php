@@ -1,4 +1,8 @@
 <?php
+    if(!isset($_SESSION))
+    {
+        session_start();
+    }
     include ('dbh.php');
     if(isset($_POST['login'])) {
         $email = strtolower($_POST['email']);

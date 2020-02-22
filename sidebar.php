@@ -1,9 +1,12 @@
 <?php
-include('dbh.php');
-
-if(!isset($_SESSION['email'])){
+  if(!isset($_SESSION))
+  {
+      session_start();
+  }
+  if(!isset($_SESSION['email'])){
     header("Location: login.php");
-}
+  }
+  include('dbh.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
